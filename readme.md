@@ -74,4 +74,4 @@ Flights Info JSON: `/flightpartner/<path:flightpartner_id>/info/JSON`
 
 ## Miscellaneous
 
-This project is inspiration from https://github.com/chrisullyott/udacity-restaurant-menu.
+This project is inspiration from chrisullyott.
