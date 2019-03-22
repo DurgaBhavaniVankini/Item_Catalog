@@ -1,0 +1,41 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+{% include "flash.html" %}
+
+<div class="container">
+	<hr class="soften"/>
+	<div class="well well-small">
+	<center><h2>Flights Information</h2></center>
+		<br>
+		
+        <table class="table table-bordered css-serial">
+				<thead style="background-color: #FFA500; color: #333">
+					<tr>
+						<th>S.No.</th>
+						<th>Source</th>
+						<th>Destination</th>
+						<th>Time</th>
+						<th>Fare</th>
+						
+					</tr>
+					</thead>  
+					{% for flight in flights %}  
+				<tbody>   
+					<tr>
+						<td></td>
+						<td>{{flight.source}}</td>
+						<td>{{flight.destination}}</td>    
+						<td>{{flight.time}}</td>
+						<td>{{flight.fare}}</td>
+						
+					</tr>				
+				</tbody>    
+				{% endfor %}  
+			</table>
+
+                        
+                        
+                    </div>
+                    </div>
+                    {% endblock %}
